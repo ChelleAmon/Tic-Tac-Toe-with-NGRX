@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BoardRoutingModule } from './board-routing.module';
-import { BoardComponent } from './pages/board/board.component';
+import { BoardComponent } from './page/board/board.component';
 
 
 @NgModule({
