@@ -17,10 +17,35 @@ footer {
   width: 100%;
 }
 
-header {
+
+.main-container {
+  display:flex;
   position: relative;
-  left: 0;
-  top: 0;
+  top: 0px;
+  height: 685px;
+  background-color: lightgray;
+
+}
+
+.first-div {
+  width: 67vmax;
+  height: 685px;
+  background-color: aquamarine;
+}
+
+.second-div {
+  width: 33vmax;
+  height: 685px;
+  background-color: coral;
+}
+
+.board-container {
+  width: 600px;
+  height: 600px;
+  margin: 4vmin 4vmin;
+  justify-content: center;
+  background-color: #333;
+  border: 2px solid white;
 }
 
 
