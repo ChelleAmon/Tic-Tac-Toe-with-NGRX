@@ -38,7 +38,9 @@ export class BoardTilesComponent implements OnInit {
   }
 
   test(){
-    console.log('clicked')
+    const TURN = this.boardService.nextTurn()
+    console.log('clicked', `${TURN}`)
+    return TURN
   }
 
 }

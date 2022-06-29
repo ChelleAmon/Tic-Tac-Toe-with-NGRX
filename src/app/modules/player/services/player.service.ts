@@ -9,8 +9,12 @@ import { getAllPlayersSelector } from '../store/selectors/player.selectors';
 export class PlayerService {
 
   players$;
+
   constructor(private store: Store<State>) {
 
     this.players$ = this.store.select(getAllPlayersSelector)
+
    }
+
+   
 }
