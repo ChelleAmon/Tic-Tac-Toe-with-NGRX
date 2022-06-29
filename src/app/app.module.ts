@@ -9,6 +9,7 @@ import { BoardModule } from './modules/board/board.module';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { reducers, metaReducers } from './reducers';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     SharedModule,
     BoardModule,
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    StoreModule.forRoot(reducers, { metaReducers }),
+    !environment.production ? StoreDevtoolsModule.instrument() : []
   ],
   providers: [],
   bootstrap: [AppComponent]
