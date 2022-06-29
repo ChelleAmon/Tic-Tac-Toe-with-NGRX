@@ -10,6 +10,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { reducers, metaReducers } from './reducers';
+import { PlayerModule } from './modules/player/player.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { reducers, metaReducers } from './reducers';
     AppRoutingModule,
     SharedModule,
     BoardModule,
+    PlayerModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
     StoreModule.forRoot(reducers, { metaReducers }),
     !environment.production ? StoreDevtoolsModule.instrument() : []
