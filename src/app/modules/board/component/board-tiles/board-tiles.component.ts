@@ -37,5 +37,8 @@ export class BoardTilesComponent implements OnInit {
     }
   }
 
+  test(){
+    console.log('clicked')
+  }
 
 }

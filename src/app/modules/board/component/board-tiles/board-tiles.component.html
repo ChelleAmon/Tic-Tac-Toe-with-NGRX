@@ -1,3 +1,3 @@
 <div [ngStyle]="boardLayout()">
-  <div *ngFor="let tile of tiles$ | async" [ngStyle]="tileBlock()"></div>
+  <div *ngFor="let tile of tiles$ | async" [ngStyle]="tileBlock()" (click)="test()"></div>
 </div>
