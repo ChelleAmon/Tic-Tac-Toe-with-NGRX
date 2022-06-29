@@ -18,4 +18,14 @@ export class GetTurnComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  turnBlock(){
+    return {
+      "margin": "25px 14px",
+      "background-color": "beige",
+      "width": "250px",
+      "height" : "100px",
+      "font-family": "Arial",
+      "font-size": "2.5rem"
+    }
+  }
 }
