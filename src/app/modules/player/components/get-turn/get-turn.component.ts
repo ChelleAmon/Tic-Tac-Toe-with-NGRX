@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { State } from 'src/app/reducers';
+import { getTurnSelector } from '../../store/selectors/player.selectors';
 
 @Component({
   selector: 'app-get-turn',
@@ -7,7 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetTurnComponent implements OnInit {
 
-  constructor() { }
+  turn$;
+  constructor(private store: Store<State>) {
+    this.turn$ = this.store.select(getTurnSelector)
+   }
 
   ngOnInit(): void {
   }
