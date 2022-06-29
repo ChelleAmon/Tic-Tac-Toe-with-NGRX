@@ -1,1 +1,3 @@
-<div *ngFor="let tile of tiles$ | async" [ngStyle]="tileBlock()"></div>
+<div [ngStyle]="boardLayout()">
+  <div *ngFor="let tile of tiles$ | async" [ngStyle]="tileBlock()"></div>
+</div>

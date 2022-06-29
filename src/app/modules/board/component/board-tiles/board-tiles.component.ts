@@ -17,12 +17,23 @@ export class BoardTilesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  boardLayout(){
+    return {
+       "width": "612px",
+       "height": "612px",
+       "border": "2px solid white",
+       "display": "flex",
+       "flex-wrap": "wrap",
+     }
+   }
+
   tileBlock(){
     return {
-      "border": "1px solid white",
+      "border": "2px solid white",
       "background-color": "#333",
-      "width": "196px",
-      "height": "196px"
+      "width": "200px",
+      "height": "200px",
+
     }
   }
 

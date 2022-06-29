@@ -12,16 +12,4 @@ export class BoardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  boardLayout(){
-   return {
-      "width": "620px",
-      "height": "620px",
-      "margin":'4vmin 4vmin',
-      "border": "2px solid white",
-      "display": "flex",
-      "flex-wrap": "wrap"
-    }
-  }
-
 }
