@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import * as fromPlayer from './store/reducers/player.reducer';
+import { GetTurnComponent } from './components/get-turn/get-turn.component';
 
 
 
@@ -13,6 +14,7 @@ import * as fromPlayer from './store/reducers/player.reducer';
   declarations: [
     PlayerComponent,
     GetPlayersComponent,
+    GetTurnComponent,
 
   ],
   imports: [

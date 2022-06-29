@@ -16,6 +16,9 @@ export class GetPlayersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  playerContainerBlock(){
+    return {'margin-top': '20px', 'position': 'relative', 'top': '20px', 'left': '3px'}
+  }
 
   playerBlock(){
     return {
