@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BoardRoutingModule } from './board-routing.module';
+import { BoardComponent } from './pages/board/board.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    BoardComponent
+  ],
   imports: [
     CommonModule,
     BoardRoutingModule
