@@ -21,7 +21,7 @@ export class GetTurnComponent implements OnInit {
   turnBlock(){
     return {
       "margin": "25px 14px",
-      "background-color": "beige",
+      "background-color": "cyan",
       "width": "250px",
       "height" : "100px",
       "font-family": "Arial",
