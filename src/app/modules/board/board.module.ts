@@ -17,6 +17,10 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     BoardRoutingModule,
     SharedModule
+  ],
+  exports: [
+    BoardComponent,
+    BoardTilesComponent
   ]
 })
 export class BoardModule { }

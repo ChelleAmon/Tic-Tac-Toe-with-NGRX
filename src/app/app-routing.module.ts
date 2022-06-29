@@ -8,6 +8,11 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'board',
+    loadChildren: () => import('./modules/board/board.module')
+    .then(m => m.BoardModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: "full"
