@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BoardService } from '../../services/board.service';
 
 @Component({
   selector: 'app-board-tiles',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardTilesComponent implements OnInit {
 
-  constructor() { }
+  tiles$;
+  constructor(private boardService: BoardService) {
+    this.tiles$ = this.boardService.tiles$
+   }
 
   ngOnInit(): void {
   }
