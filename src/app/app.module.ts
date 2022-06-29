@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SharedModule } from './modules/shared/shared.module';
 import { BoardModule } from './modules/board/board.module';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BoardModule } from './modules/board/board.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    BoardModule
+    BoardModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
