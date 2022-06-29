@@ -18,6 +18,9 @@ import { RouterModule } from '@angular/router';
     SharedModule,
     RouterModule,
 
+  ],
+  exports: [
+    PlayerComponent,
   ]
 })
 export class PlayerModule { }
