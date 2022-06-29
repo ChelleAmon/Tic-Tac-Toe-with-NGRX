@@ -16,4 +16,16 @@ export class GetPlayersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  playerBlock(){
+    return {
+      "background-color": "lightyellow",
+      "width": "250px",
+      "height": "200px",
+      "margin": "25px 12px",
+      "color": "blue",
+      "font-family": "Helvetica",
+      "font-size" : "1.5rem"
+    }
+  }
 }

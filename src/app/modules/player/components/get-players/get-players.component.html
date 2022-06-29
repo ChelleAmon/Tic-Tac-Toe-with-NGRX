@@ -1,3 +1,8 @@
 <p>get-players works!</p>
 
-{{players$ | async | json}}
+<div>
+  <div *ngFor="let player of players$ | async; let i = index" [ngStyle]="playerBlock()">
+    <span> Player {{i + 1}}:  </span>
+    <span>{{player}}</span>
+  </div>
+</div>
