@@ -9,11 +9,22 @@ import { BoardService } from '../../services/board.service';
 export class BoardTilesComponent implements OnInit {
 
   tiles$;
+
   constructor(private boardService: BoardService) {
     this.tiles$ = this.boardService.tiles$
    }
 
   ngOnInit(): void {
   }
+
+  tileBlock(){
+    return {
+      "border": "1px solid white",
+      "background-color": "#333",
+      "width": "196px",
+      "height": "196px"
+    }
+  }
+
 
 }
