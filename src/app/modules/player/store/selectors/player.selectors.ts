@@ -8,3 +8,8 @@ export const getAllPlayersSelector = createSelector(
   selectPlayerFeatureState,
   (state) => state.players
 )
+
+export const getTurnSelector = createSelector(
+  selectPlayerFeatureState,
+  (state) => state.turn
+)
