@@ -9,9 +9,11 @@ import { BoardService } from '../../services/board.service';
 export class BoardTilesComponent implements OnInit {
 
   tiles$;
+  playerTurn$;
 
   constructor(private boardService: BoardService) {
     this.tiles$ = this.boardService.tiles$
+    this.playerTurn$ = this.boardService.playerTurn$
    }
 
   ngOnInit(): void {
@@ -33,14 +35,14 @@ export class BoardTilesComponent implements OnInit {
       "background-color": "#333",
       "width": "200px",
       "height": "200px",
+      "color": "white",
+      "font-size": "20px"
 
     }
   }
 
-  test(){
-    const TURN = this.boardService.nextTurn()
-    console.log('clicked', `${TURN}`)
-    return TURN
+  test(tile: number, value: string){
+    return this.boardService.nextTurn(tile, value)
   }
 
 }

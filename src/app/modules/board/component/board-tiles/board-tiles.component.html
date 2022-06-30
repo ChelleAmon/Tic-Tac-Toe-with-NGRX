@@ -1,3 +1,9 @@
-<div [ngStyle]="boardLayout()">
-  <div *ngFor="let tile of tiles$ | async" [ngStyle]="tileBlock()" (click)="test()"></div>
-</div>
+<ng-container *ngIf="playerTurn$ | async as playerTurn">
+  <div [ngStyle]="boardLayout()">
+    <div *ngFor="let tile of tiles$ | async ;let i= index"  (click)="test(i, playerTurn )" [ngStyle]="tileBlock()">
+        <p>{{playerTurn}}</p>
+    </div>
+  </div>
+</ng-container>
+
+

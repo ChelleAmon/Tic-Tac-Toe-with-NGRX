@@ -1,7 +1,8 @@
 import { createAction, props } from '@ngrx/store';
 
-export const loadBoards = createAction(
-  '[Board] Load Boards'
+export const actionChangePlayerTile = createAction(
+  '[Board] Change Player Tile',
+  props<{tile: number, value: string}>()
 );
 
 
